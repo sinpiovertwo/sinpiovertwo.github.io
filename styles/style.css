@@ -20,6 +20,7 @@ header {
   text-align: center;
   border-radius: 0 0 12px 12px; /* 아래쪽 모서리 둥글게 */
 }
+
 header h1{
   position: relative;
   transition: color 0.1s;
@@ -42,11 +43,28 @@ section{
   border: 3px dashed #eed4fc; 
   padding: 10px;
   border-radius: 0 0 12px 12px;
+  text-align: center;
 }
+
+.container {
+  display: flex;           /* 좌우 분할 */
+  gap: 16px;               /* 사이 간격 */
+}
+.left { flex: 1; }         /* 왼쪽 영역 넓게 */
+.right { flex: 1; }  
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* 세로 쌓기 */
+  }
+}
+
 
 a:link,
 a:visited,
 a:active 
+a.g:link,
+a.g:visited
 {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -64,5 +82,12 @@ a.h:hover,
 a.h:active
 {
   color: #e68caf;
+  text-decoration: none;
+}
+
+a.g:hover,
+a.g:active
+{
+  color: #1a9030;
   text-decoration: none;
 }
