@@ -61,13 +61,14 @@ section{
   border: 3px dashed #eed4fc; 
   padding: 10px;
   border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
 }
 
 
 
 a:link,
 a:visited,
-a:active 
+a:active,
 a.g:link,
 a.g:visited
 {
