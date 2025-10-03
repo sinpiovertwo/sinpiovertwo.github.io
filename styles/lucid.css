@@ -38,7 +38,7 @@ header h1{
 /* 모바일 전환 */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 2rem; /* 화면에 맞게 줄임 */
+    font-size: 8vw; /* 화면에 맞게 줄임 */
     word-break: keep-all; /* 글자 쪼개지지 않게 */
     white-space: nowrap;  /* 한 줄로 유지 */
   }
@@ -85,3 +85,4 @@ a.h:active
   text-decoration: none;
 
 }
+
