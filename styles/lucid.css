@@ -35,6 +35,15 @@ header h1{
   display: inline-block; /* 텍스트 폭만큼만 차지 */
 }
 
+/* 모바일 전환 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* 화면에 맞게 줄임 */
+    word-break: keep-all; /* 글자 쪼개지지 않게 */
+    white-space: nowrap;  /* 한 줄로 유지 */
+  }
+}
+
 header h1:hover {
   color: #bdff3a;
 }
@@ -74,4 +83,5 @@ a.h:active
 {
   color: #e68caf;
   text-decoration: none;
+
 }
