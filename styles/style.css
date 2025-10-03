@@ -35,20 +35,20 @@ header h1:hover {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  gap: 25px;
+  gap: 16px;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+  }
 }
 
 section{
   border: 3px dashed #eed4fc; 
   padding: 10px;
   border-radius: 0 0 12px 12px;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* 세로 쌓기 */
-  }
 }
 
 
@@ -83,4 +83,5 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
+
 
