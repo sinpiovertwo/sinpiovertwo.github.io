@@ -12,6 +12,12 @@
 .t1 {font-family: 'nexongothic';}
 .t2 {font-family: 'OwnglyphParkDaHyun';}
 
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
 
 header {
   background: linear-gradient(to bottom right, #580c4a, #e68caf, #6a47c7);
@@ -37,11 +43,17 @@ header h1:hover {
   grid-template-columns: 1fr 1fr; 
   gap: 16px;
   padding: 20px;
+  max-width: 100%;   /* 화면보다 커지지 않게 */
+  box-sizing: border-box; /* padding 포함 너비 계산 */
 }
 
+/* 모바일 전환 */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr; /* 한 줄에 하나씩 */
+  }
+  .container > section {
+    width: 100%; /* 혹시 지정되어 있다면 명시 */
   }
 }
 
@@ -50,6 +62,7 @@ section{
   padding: 10px;
   border-radius: 0 0 12px 12px;
 }
+
 
 
 a:link,
@@ -83,5 +96,3 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
-
-
