@@ -43,15 +43,7 @@ section{
   border: 3px dashed #eed4fc; 
   padding: 10px;
   border-radius: 0 0 12px 12px;
-  text-align: center;
 }
-
-.container {
-  display: flex;           /* 좌우 분할 */
-  gap: 16px;               /* 사이 간격 */
-}
-.left { flex: 1; }         /* 왼쪽 영역 넓게 */
-.right { flex: 1; }  
 
 @media (max-width: 768px) {
   .container {
@@ -91,3 +83,4 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
+
