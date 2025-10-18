@@ -43,33 +43,37 @@ header h1:hover {
   grid-template-columns: 1fr 1fr; 
   gap: 16px;
   padding: 10px;
-  max-width: 100%;   /* 화면보다 커지지 않게 */
+  max-width: 100%;  /* 화면보다 커지지 않게 */
   box-sizing: border-box; /* padding 포함 너비 계산 */
 }
 
-/* 모바일 전환 */
+section{
+  
+  border: 3px dashed #eed4fc; 
+  padding: 10px;
+  border-radius: 0 0 12px 12px;
+  max-width: 100%;  
+  box-sizing: border-box;
+}
+
+.container > section img,
+.container > section table {
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 768px) {
-  audio{
+  audio 
+  {
     width: 100%;
     max-width: 100%;
     display: block;
   }
-  .container {
-    grid-template-columns: 1fr; /* 한 줄에 하나씩 */
-  }
-  .container > section {
-    width: 100%; /* 혹시 지정되어 있다면 명시 */
+  .container 
+  {
+    grid-template-columns: 1fr;
   }
 }
-
-section{
-  border: 3px dashed #eed4fc; 
-  padding: 10px;
-  border-radius: 0 0 12px 12px;
-  box-sizing: border-box;
-}
-
-
 
 a:link,
 a:visited,
@@ -102,5 +106,3 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
-
-
