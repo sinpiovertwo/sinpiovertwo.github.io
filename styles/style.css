@@ -42,7 +42,7 @@ header h1:hover {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 16px;
-  padding: 20px;
+  padding: 10px;
   max-width: 100%;   /* 화면보다 커지지 않게 */
   box-sizing: border-box; /* padding 포함 너비 계산 */
 }
@@ -102,4 +102,5 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
+
 
