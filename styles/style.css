@@ -49,6 +49,11 @@ header h1:hover {
 
 /* 모바일 전환 */
 @media (max-width: 768px) {
+  audio{
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
   .container {
     grid-template-columns: 1fr; /* 한 줄에 하나씩 */
   }
@@ -97,3 +102,4 @@ a.g:active
   color: #1a9030;
   text-decoration: none;
 }
+
