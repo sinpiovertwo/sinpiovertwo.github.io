@@ -8,50 +8,68 @@
   src : url("font/Ownglyph_ParkDaHyun.woff2") format('woff2');
 }
 
+@font-face {
+    font-family: 'Cafe24NyangiWhite';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/Cafe24Nyangi-W-v1.0.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+  font-family: 'solemnis';
+  src: url("font/MarketingDisparitiesDemoRegular-m27a9.ttf") format('truetype');
+}
 
 .t1 {font-family: 'nexongothic';}
 .t2 {font-family: 'OwnglyphParkDaHyun';}
+.t3 {font-family: 'Cafe24NyangiWhite';}
+.t4 {font-family: 'solemnis';}
 
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-x: hidden; 
 }
 
 header {
-  background: linear-gradient(to bottom right, #580c4a, #e68caf, #6a47c7);
+  background: #0000ff;
   color: white;
-  padding: 1rem;
+  padding: 0.3rem;
   text-align: center;
-  border-radius: 0 0 12px 12px; /* 아래쪽 모서리 둥글게 */
+  /* border-radius: 0 0 25px 25px; */
+  clip-path: ellipse(120% 100% at 50% 0%);
+}
+
+
+header a:hover {
+  color: rgb(0, 255, 255);
 }
 
 header h1{
   position: relative;
   transition: color 0.1s;
-  display: inline-block; /* 텍스트 폭만큼만 차지 */
+  display: inline-block;
 }
 
 header h1:hover {
-  color: #ffdd57;
+  color: #00ffff;
 }
-/*  background: linear-gradient(to bottom right, #40ffca, #9a76a4, #da0e7f); 민트-보라-핑크*/
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 16px;
   padding: 10px;
-  max-width: 100%;  /* 화면보다 커지지 않게 */
-  box-sizing: border-box; /* padding 포함 너비 계산 */
+  max-width: 100%;  
+  box-sizing: border-box;
+  border: none;
 }
 
 section{
   
-  border: 3px dashed #eed4fc; 
-  padding: 10px;
-  border-radius: 0 0 12px 12px;
+  border: 3px solid #a3a3db ; 
+  padding: 9px;
+  border-radius: 5px;
   max-width: 100%;  
   box-sizing: border-box;
 }
@@ -77,9 +95,7 @@ section{
 
 a:link,
 a:visited,
-a:active,
-a.g:link,
-a.g:visited
+a:active
 {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -96,13 +112,21 @@ a:active,
 a.h:hover,
 a.h:active
 {
-  color: #e68caf;
+  color: #0000ff;
   text-decoration: none;
 }
 
-a.g:hover,
-a.g:active
+
+
+footer,
+footer a:link,
+footer a:visited
 {
-  color: #1a9030;
-  text-decoration: none;
+  background: #ededf7;
+  color:rgb(113, 116, 134);
+  border-radius: 25px 25px 0 0;
+  padding: 1rem;
+  text-align: center;
 }
+
+
