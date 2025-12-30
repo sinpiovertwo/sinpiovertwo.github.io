@@ -5,68 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLEMNIS</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="img/로시엠.PNG"  rel="icon" type="image/png">
 </head>
 <body>
-    <header id="header">
-        <h1 class="t3" style="text-align: center; font-size: 3.5rem;"><span class="t4">SOLEMNIS </span></h1>
-        <!-- <span class="t2">♤</span> -->
-        <nav>test</nav>
-    </header>
-    <main>
-        <div>
-
-        </div>
-
-    </main>
-    <section class="container">
-        <section>
-            <h3 class="t1">mini MP3s</h3>
-            <select name="year">
-                <option>2025</option>
-
-            </select>
-            <figure class="t1">
-                <figcaption>20251106</figcaption>
-                <audio controls src="mp3/20251106.wav"></audio>
-            </figure>
-            <figure class="t1">
-                <figcaption>20250909</figcaption>
-                <audio controls src="mp3/20250909.mp3"></audio>
-            </figure>
-            <figure class="t1">
-                <figcaption>20250817<span style="color:rgb(148, 173, 220); font-size: small;"> (lyrics: 누룽지밥)</span></figcaption>
-                <audio controls src="mp3/외계인증후군.mp3"></audio>
-            </figure>
-            <figure class="t1">
-                <figcaption>20250708</figcaption>
-                <audio controls src="mp3/20250708.mp3"></audio>
-            </figure>
-            <figure class="t1">
-                <figcaption><a href="https://youtu.be/Ty20UWTWN4I?feature=shared" target="_blank" rel="noopener noreferrer">20250420</a></figcaption>
-                <audio controls src="mp3/20250420.mp3"></audio>
-            </figure>
-            <figure class="t1">
-                <figcaption>20250316</figcaption>
-                <audio controls src="mp3/20250316.mp3"></audio>
-            </figure>   
-            <figure class="t1">
-                <figcaption><a href="https://youtu.be/FxvvYM4cduk?feature=shared" target="_blank" rel="noopener noreferrer">marginalized</a></figcaption>
-                <audio controls src="mp3/marginalized.mp3"></audio>
-            </figure>               
+    <div class="headerWrap">
+        <header class="main">
+            <h1 class="t3" style="text-align: center; font-size: 3.5rem;"><a href="index.html" class="t4">SOLEMNIS </a></h1>
+            <!-- <span class="t2">♤</span> -->
+        </header>
+        <!-- <header class="under">
+            <h1 class="t3" style="color: #28288600; font-size: 3.5rem;"><span class="t4">SOLEMNIS </span></h1>
+            <br>
+            <a class="t1">test</a>
+            <br>
+            <a class="t1">test</a>
+            <p class="t1" style="margin-bottom: 0; color:rgb(65, 75, 104)">who is solemnis?</p>
+            <nav>
+                
+            </nav>
+        </header> -->
+    </div>
+    <main style="background: #fbfbff;">
+        <section class="container">
+            <section class="content"> <!--미니MP3-->
+                <h3 class="t1">Short Music</h3>
+                <select class="t1" id="selector">
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                </select>
+                <div>
+                    <div id="2026" class="year" style="display: block;">
+                        <figure class="t1">
+                            <figcaption>2026????</figcaption>
+                            <audio controls src="mp3/2026????"></audio>
+                        </figure>
+                    </div>
+                    <div id="2025" class="year" style="display: none;"> <!--음악 파일-->
+                        <figure class="t1">
+                            <figcaption>20251106</figcaption>
+                            <audio controls src="mp3/20251106.wav"></audio>
+                        </figure>
+                        <figure class="t1">
+                            <figcaption>20250909</figcaption>
+                            <audio controls src="mp3/20250909.mp3"></audio>
+                        </figure>
+                        <figure class="t1">
+                            <figcaption>20250817<span style="color:rgb(148, 173, 220); font-size: small;"> (lyrics: 누룽지밥)</span></figcaption>
+                            <audio controls src="mp3/20250817.mp3"></audio>
+                        </figure>
+                        <figure class="t1">
+                            <figcaption>20250708</figcaption>
+                            <audio controls src="mp3/20250708.mp3"></audio>
+                        </figure>
+                        <figure class="t1">
+                            <figcaption><a href="https://youtu.be/Ty20UWTWN4I?feature=shared" target="_blank" rel="noopener noreferrer">20250420</a></figcaption>
+                            <audio controls src="mp3/20250420.mp3"></audio>
+                        </figure>
+                        <figure class="t1">
+                            <figcaption>20250316</figcaption>
+                            <audio controls src="mp3/20250316.mp3"></audio>
+                        </figure>   
+                        <figure class="t1">
+                            <figcaption><a href="https://youtu.be/FxvvYM4cduk?feature=shared" target="_blank" rel="noopener noreferrer">marginalized</a></figcaption>
+                            <audio controls src="mp3/marginalized.mp3"></audio>
+                        </figure>      
+                    </div>
+                </div>
         </section>
-        <section>
-            <h3 class="t1">COMMISSIONs</h3>
-            <a class="t1" href="daegi.html">접속하기</a>
-            </br></br>
+        <section class="content">
+            <h3 class="t1">OCs</h3>
+            <a class="t1" href="">준비중입니다</a>
             <p class="t1">준비중입니다...</p>
         </section>
     </section>
+    </main>
+
     <footer>
         <p></p>
         <a class="ftr" href="https://www.youtube.com/channel/UCqQcG7AMgMldyhn52HrWx4A" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
-        <a class="ftr" href="https://x.com/Lossiemn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="ftr" href="https://x.com/lossiemn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
         <p>© 2025 solemnis. All rights reserved.</p>
     </footer>
 </body>
